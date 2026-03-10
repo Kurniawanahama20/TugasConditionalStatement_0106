@@ -30,6 +30,7 @@ string statusBMI(float bmi) {
     }
 }
 
+//Procedur for output data
 int main() {
     float berat, tinggi, bmi;
 
@@ -38,4 +39,10 @@ int main() {
     inputData(berat, tinggi);
 
     bmi = hitungBMI(berat, tinggi);
+
+    cout << "\n--- Hasil ---" << endl;
+    cout << "BMI Anda : " << bmi << endl;
+    cout << "Status   : " << statusBMI(bmi) << endl;
+
+    return 0;
 }
